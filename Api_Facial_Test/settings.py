@@ -86,17 +86,28 @@ WSGI_APPLICATION = 'Api_Facial_Test.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dbfacial',  # Reemplaza con el nombre real de tu BD
+#         'USER': 'postgres',
+#         'PASSWORD': 'Rioazulq12',  # Déjalo vacío si PostgreSQL no tiene contraseña
+#         'HOST': 'localhost',  # O la IP del servidor si está en otro lugar
+#         'PORT': '5432',  # Puerto por defecto de PostgreSQL
+#     }
+# }
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'dbfacial',  # Reemplaza con el nombre real de tu BD
-        'USER': 'postgres',
-        'PASSWORD': 'Rioazulq12',  # Déjalo vacío si PostgreSQL no tiene contraseña
-        'HOST': 'localhost',  # O la IP del servidor si está en otro lugar
+        'USER': 'dbfacial_user',
+        'PASSWORD': 'Lo2SSxT79t9uNAVAJyx6iDqoZnNWRmTY',  # Déjalo vacío si PostgreSQL no tiene contraseña
+        'HOST': 'dpg-cvdm1djv2p9s73931tk0-a.oregon-postgres.render.com',  # O la IP del servidor si está en otro lugar
         'PORT': '5432',  # Puerto por defecto de PostgreSQL
     }
 }
-
 
 
 # Password validation
