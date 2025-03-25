@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+mkzs_xchv3z1$3kkw28h_5!baizc+72sk)#m)yne4h!%1p%&p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -98,14 +98,25 @@ WSGI_APPLICATION = 'Api_Facial_Test.wsgi.application'
 # }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dbfacial',  # Reemplaza con el nombre real de tu BD
+#         'USER': 'dbfacial_user',
+#         'PASSWORD': 'Lo2SSxT79t9uNAVAJyx6iDqoZnNWRmTY',  # Déjalo vacío si PostgreSQL no tiene contraseña
+#         'HOST': 'dpg-cvdm1djv2p9s73931tk0-a.oregon-postgres.render.com',  # O la IP del servidor si está en otro lugar
+#         'PORT': '5432',  # Puerto por defecto de PostgreSQL
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbfacial',  # Reemplaza con el nombre real de tu BD
-        'USER': 'dbfacial_user',
-        'PASSWORD': 'Lo2SSxT79t9uNAVAJyx6iDqoZnNWRmTY',  # Déjalo vacío si PostgreSQL no tiene contraseña
-        'HOST': 'dpg-cvdm1djv2p9s73931tk0-a.oregon-postgres.render.com',  # O la IP del servidor si está en otro lugar
-        'PORT': '5432',  # Puerto por defecto de PostgreSQL
+        'NAME': 'facial_db',
+        'USER': 'facial_user',
+        'PASSWORD': 'facial_password',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
