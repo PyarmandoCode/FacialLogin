@@ -7,6 +7,7 @@ class Personaje(models.Model):
     descripcion = models.TextField(blank=True,null=True)
     edad = models.IntegerField()
     imagen_referencia = models.URLField()  # URL de Cloudinary
+    cedula=models.CharField(max_length=100)
 
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
